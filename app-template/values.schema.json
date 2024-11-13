@@ -9,6 +9,11 @@
           "type": "string",
           "description": "Application image"
         },
+        "appid": {
+          "title": "App Id",
+          "type": "string",
+          "description": "Application Id"
+        },        
         "version": {
           "title": "Image version",
           "type": "string",
@@ -21,10 +26,12 @@
         }
       },
       "required": [
+        "appid",
         "image",
         "version"
       ],
       "order": [
+        "appid",
         "image",
         "version",
         "environment"
